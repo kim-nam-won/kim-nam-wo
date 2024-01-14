@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .story-border {
+      border: 2px solid white;
+      box-shadow: 0 0 0 2px black;
+    }
+  </style>
+</head>
+<body class="bg-black font-sans leading-normal tracking-normal">
+
+  <!-- Top Bar -->
+  <div class="p-4 flex justify-between items-center">
+    <div class="flex items-center">
+      <div class="rounded-full h-10 w-10 overflow-hidden">
+        <img src="./img/img_1.png" alt="User profile" class="object-cover">
+      </div>
+      <span class="ml-2 text-white font-semibold">김남현</span>
+    </div>
+    <div class="space-x-4">
+      <button class="text-white">
+        <i class="fas fa-search"></i>
+      </button>
+      <button class="text-white">
+        <i class="fas fa-user-plus"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Stories & Contacts -->
+  <div class="px-4">
+    <!-- Stories Section -->
+    <div class="flex space-x-2 mb-4 overflow-x-auto">
+      <!-- Add stories here -->
+      <div class="story-border rounded-full p-1">
+        <div class="w-16 h-16 rounded-full bg-gray-800"></div>
+      </div>
+      <!-- Repeat for each story -->
+    </div>
+
+    <!-- Birthday Section -->
+    <div class="mb-4">
+      <div class="bg-gray-800 p-3 rounded-lg flex justify-between items-center">
+        <div class="flex items-center">
+          <div class="rounded-full h-10 w-10 overflow-hidden mr-2">
+            <img src="./img/img_2.png" alt="Friend profile" class="object-cover">
+          </div>
+          <span class="text-white">생일 축하 메시지</span>
+        </div>
+        <button class="text-red-500">축하하기</button>
+      </div>
+    </div>
+
+    <!-- Contacts Section -->
+    <div class="bg-gray-800 p-3 rounded-lg">
+      <!-- Contact Item -->
+      <div class="flex items-center justify-between mb-2">
+        <div class="flex items-center">
+          <div class="rounded-full h-10 w-10 overflow-hidden mr-2">
+            <img src="./img/img_3.png" alt="Contact profile" class="object-cover">
+          </div>
+          <span class="text-white">Contact Name</span>
+        </div>
+        <span class="text-white">Chat Icon</span>
+      </div>
+      <!-- Repeat for each contact -->
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="fixed bottom-0 inset-x-0 bg-gray-800 text-white text-center py-2 flex justify-around">
+    <span><i class="fas fa
+-home"></i></span>
+<span><i class="fas fa-comment"></i></span>
+<span><i class="fas fa-user-circle"></i></span>
+<span><i class="fas fa-bell"></i></span>
+<span><i class="fas fa-cog"></i></span>
+
+  </div>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</body>
+</html>
